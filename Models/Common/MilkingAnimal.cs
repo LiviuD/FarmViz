@@ -31,7 +31,7 @@ namespace FarmVizModels
             return new List<Milking>(Milkings.Cast<Milking>()).AsEnumerable(); 
         }
         protected IList<IActivity> Milkings { get; set; }
-        protected virtual decimal MilkingOnDate(DateTime date)
+        public virtual decimal MilkingOnDate(DateTime date)
         {
             var result = Milkings.Where(x => x.DateTime.Date == date.Date).Sum(x => x.Amount);
             return result;

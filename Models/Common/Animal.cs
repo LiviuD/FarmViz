@@ -37,8 +37,7 @@ namespace FarmVizModels
         {
             return new List<Feed>(Feedings.Cast<Feed>()).AsEnumerable();
         }
-
-        protected virtual decimal FeedOnADate(DateTime date)
+        public virtual decimal FeedOnADate(DateTime date)
         {
             var result = Feedings.Where(x => x.DateTime.Date == date.Date).Sum(x => x.Amount);
             return result;
