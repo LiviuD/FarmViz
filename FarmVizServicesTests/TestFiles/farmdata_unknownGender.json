@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "Labadie - Lesch - Farm",
+    "Animals": [
+      {
+        "Id": 0,
+        "Sex": "Other",
+        "AnimalType": "Goat",
+        "Feedings": [
+          {
+            "DateTime": "2021-10-01T10:32:00",
+            "Amount": 25
+          }
+        ]
+      }
+    ]
+  }
+]
